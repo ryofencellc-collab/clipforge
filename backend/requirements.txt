@@ -1,0 +1,23 @@
+# Web framework
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-multipart==0.0.9
+pydantic==2.7.1
+
+# YouTube downloading
+yt-dlp>=2024.1.0
+
+# Audio analysis
+librosa==0.10.2
+soundfile==0.12.1
+numba==0.59.1
+llvmlite==0.42.0
+numpy==1.26.4
+
+# AI transcription (whisper needs torch — use CPU-only to keep image small)
+openai-whisper==20231117
+torch==2.2.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Computer vision
+opencv-python-headless==4.9.0.80
